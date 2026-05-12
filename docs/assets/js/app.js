@@ -23,6 +23,16 @@ const loadingIndicator = document.getElementById('loading-indicator');
 let categoryChartInstance = null;
 let timelineChartInstance = null;
 
+// Modal Elements
+const categoryModal = document.getElementById('category-modal');
+const modalCategoryList = document.getElementById('modal-category-list');
+const manageCategoriesBtn = document.getElementById('manage-categories-btn');
+const closeModalBtn = document.getElementById('close-modal');
+const modalOverlay = document.getElementById('modal-overlay');
+const addCategoryBtn = document.getElementById('add-category-btn');
+const downloadCategoriesBtn = document.getElementById('download-categories');
+const copyCategoriesBtn = document.getElementById('copy-categories');
+
 // Initialization
 async function init() {
     setupThemeToggle();
@@ -155,6 +165,133 @@ function setupEventListeners() {
     });
 
     document.getElementById('download-csv').addEventListener('click', downloadCSV);
+    
+    // Category Management Modal
+    manageCategoriesBtn.addEventListener('click', openCategoryModal);
+    closeModalBtn.addEventListener('click', closeCategoryModal);
+    modalOverlay.addEventListener('click', closeCategoryModal);
+    addCategoryBtn.addEventListener('click', addNewCategory);
+    downloadCategoriesBtn.addEventListener('click', downloadCategoriesJson);
+    copyCategoriesBtn.addEventListener('click', copyCategoriesJson);
+}
+
+function openCategoryModal() {
+    categoryModal.classList.remove('hidden');
+    renderModalCategoryList();
+}
+
+function closeCategoryModal() {
+    categoryModal.classList.add('hidden');
+}
+
+function renderModalCategoryList() {
+    modalCategoryList.innerHTML = '';
+    categories.forEach((cat, index) => {
+        const item = document.createElement('div');
+        item.className = 'p-4 bg-gray-50 dark:bg-gray-700/50 rounded-xl border border-gray-100 dark:border-gray-600 space-y-3';
+        item.innerHTML = `
+            <div class="flex items-center justify-between gap-4">
+                <div class="flex-1 grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-[10px] uppercase tracking-wider text-gray-400 mb-1 font-bold">카테고리명</label>
+                        <input type="text" value="${cat.label}" onchange="updateCategory(${index}, 'label', this.value)" 
+                            class="w-full px-3 py-1.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-lg text-sm outline-none focus:ring-1 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] uppercase tracking-wider text-gray-400 mb-1 font-bold">색상 (HEX)</label>
+                        <div class="flex gap-2">
+                            <input type="color" value="${cat.color}" onchange="updateCategory(${index}, 'color', this.value)" class="h-8 w-8 rounded cursor-pointer border-none p-0 bg-transparent">
+                            <input type="text" value="${cat.color}" onchange="updateCategory(${index}, 'color', this.value)" 
+                                class="flex-1 px-3 py-1.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-lg text-xs outline-none focus:ring-1 focus:ring-blue-500 font-mono">
+                        </div>
+                    </div>
+                </div>
+                <button onclick="deleteCategory(${index})" class="mt-4 p-2 text-red-500 hover:bg-red-50 dark:hover:bg-red-900/20 rounded-lg transition-colors" title="삭제">
+                    <i data-lucide="trash-2" class="w-5 h-5"></i>
+                </button>
+            </div>
+            <div>
+                <label class="block text-[10px] uppercase tracking-wider text-gray-400 mb-1 font-bold">키워드 (쉼표로 구분)</label>
+                <input type="text" value="${cat.keywords.join(', ')}" onchange="updateCategory(${index}, 'keywords', this.value)" 
+                    class="w-full px-3 py-1.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-lg text-xs outline-none focus:ring-1 focus:ring-blue-500"
+                    placeholder="예: 수소, H2, 수소경제">
+            </div>
+        `;
+        modalCategoryList.appendChild(item);
+    });
+    lucide.createIcons();
+}
+
+window.updateCategory = (index, field, value) => {
+    if (field === 'keywords') {
+        categories[index][field] = value.split(',').map(s => s.trim()).filter(s => s !== '');
+    } else {
+        categories[index][field] = value;
+    }
+    // Refresh main UI
+    renderCategoryFilters();
+    updateFilterStyles();
+};
+
+window.deleteCategory = (index) => {
+    if (confirm('정말 이 카테고리를 삭제할까요?')) {
+        categories.splice(index, 1);
+        renderModalCategoryList();
+        renderCategoryFilters();
+        applyFilters();
+    }
+};
+
+function addNewCategory() {
+    const newId = 'cat_' + Date.now();
+    categories.push({
+        id: newId,
+        label: '새 카테고리',
+        color: '#3B82F6',
+        keywords: []
+    });
+    renderModalCategoryList();
+    renderCategoryFilters();
+}
+
+function downloadCategoriesJson() {
+    const jsonString = generateCategoriesJson();
+    const blob = new Blob([jsonString], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'categories.json';
+    link.click();
+    URL.revokeObjectURL(url);
+}
+
+function copyCategoriesJson() {
+    const jsonString = generateCategoriesJson();
+    navigator.clipboard.writeText(jsonString).then(() => {
+        const originalText = copyCategoriesBtn.innerHTML;
+        copyCategoriesBtn.innerHTML = '<i data-lucide="check" class="w-5 h-5"></i> 복사 완료!';
+        copyCategoriesBtn.classList.replace('bg-blue-600', 'bg-green-600');
+        lucide.createIcons();
+        setTimeout(() => {
+            copyCategoriesBtn.innerHTML = originalText;
+            copyCategoriesBtn.classList.replace('bg-green-600', 'bg-blue-600');
+            lucide.createIcons();
+        }, 2000);
+    });
+}
+
+function generateCategoriesJson() {
+    const data = {
+        version: "1.0",
+        updated_at: new Date().toISOString().split('T')[0],
+        categories: categories,
+        matching_rule: {
+            fields: ["title", "description"],
+            case_sensitive: false,
+            multi_match: true
+        }
+    };
+    return JSON.stringify(data, null, 2);
 }
 
 function applyFilters() {
