@@ -24,14 +24,7 @@ let categoryChartInstance = null;
 let timelineChartInstance = null;
 
 // Modal Elements
-const categoryModal = document.getElementById('category-modal');
-const modalCategoryList = document.getElementById('modal-category-list');
-const manageCategoriesBtn = document.getElementById('manage-categories-btn');
-const closeModalBtn = document.getElementById('close-modal');
-const modalOverlay = document.getElementById('modal-overlay');
-const addCategoryBtn = document.getElementById('add-category-btn');
-const downloadCategoriesBtn = document.getElementById('download-categories');
-const copyCategoriesBtn = document.getElementById('copy-categories');
+let categoryModal, modalCategoryList, manageCategoriesBtn, closeModalBtn, modalOverlay, addCategoryBtn, downloadCategoriesBtn, copyCategoriesBtn;
 
 // Initialization
 async function init() {
@@ -145,6 +138,16 @@ function updateFilterStyles() {
 }
 
 function setupEventListeners() {
+    // Initialize elements
+    categoryModal = document.getElementById('category-modal');
+    modalCategoryList = document.getElementById('modal-category-list');
+    manageCategoriesBtn = document.getElementById('manage-categories-btn');
+    closeModalBtn = document.getElementById('close-modal');
+    modalOverlay = document.getElementById('modal-overlay');
+    addCategoryBtn = document.getElementById('add-category-btn');
+    downloadCategoriesBtn = document.getElementById('download-categories');
+    copyCategoriesBtn = document.getElementById('copy-categories');
+
     let debounceTimer;
     searchInput.addEventListener('input', (e) => {
         clearTimeout(debounceTimer);
@@ -167,12 +170,12 @@ function setupEventListeners() {
     document.getElementById('download-csv').addEventListener('click', downloadCSV);
     
     // Category Management Modal
-    manageCategoriesBtn.addEventListener('click', openCategoryModal);
-    closeModalBtn.addEventListener('click', closeCategoryModal);
-    modalOverlay.addEventListener('click', closeCategoryModal);
-    addCategoryBtn.addEventListener('click', addNewCategory);
-    downloadCategoriesBtn.addEventListener('click', downloadCategoriesJson);
-    copyCategoriesBtn.addEventListener('click', copyCategoriesJson);
+    if (manageCategoriesBtn) manageCategoriesBtn.addEventListener('click', openCategoryModal);
+    if (closeModalBtn) closeModalBtn.addEventListener('click', closeCategoryModal);
+    if (modalOverlay) modalOverlay.addEventListener('click', closeCategoryModal);
+    if (addCategoryBtn) addCategoryBtn.addEventListener('click', addNewCategory);
+    if (downloadCategoriesBtn) downloadCategoriesBtn.addEventListener('click', downloadCategoriesJson);
+    if (copyCategoriesBtn) copyCategoriesBtn.addEventListener('click', copyCategoriesJson);
 }
 
 function openCategoryModal() {
