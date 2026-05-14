@@ -1,6 +1,6 @@
 {
   "source": "https://eiec.kdi.re.kr/policy/rss.do?rss_type=material",
-  "last_updated": "2026-05-15T08:31:47.860153+09:00",
+  "last_updated": "2026-05-15T08:48:54.615370+09:00",
   "total_count": 289,
   "items": [
     {
@@ -244,6 +244,7 @@
       "original_category": "",
       "collected_at": "2026-05-14T18:18:31.525188+09:00",
       "matched_categories": [
+        "바이오",
         "AI"
       ]
     },
@@ -278,7 +279,9 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-14T18:18:31.525088+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "바이오"
+      ]
     },
     {
       "id": "268d9d9ec8e5bb1d7090dd45848f1409",
@@ -393,7 +396,9 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-14T18:18:31.524746+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "바이오"
+      ]
     },
     {
       "id": "5f46b53ffad0857a6e45041a83d1ad98",
@@ -437,7 +442,9 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-14T18:18:31.524603+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "바이오"
+      ]
     },
     {
       "id": "309f864a0c6b4e3f6cf163dd57a1c3b9",
@@ -610,7 +617,9 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-14T18:18:31.523920+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "바이오"
+      ]
     },
     {
       "id": "82de8d18b2b2c9185fe0397164cdc710",
@@ -1050,9 +1059,7 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-13T18:32:55.494191+09:00",
-      "matched_categories": [
-        "바이오"
-      ]
+      "matched_categories": []
     },
     {
       "id": "13571e41fa3bf89218feb1fdda4e506b",
@@ -1074,7 +1081,9 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-13T18:32:55.494092+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "바이오"
+      ]
     },
     {
       "id": "a83e9a8498fba93e51a398e750a81260",
@@ -1085,7 +1094,9 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-13T18:32:55.494039+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "바이오"
+      ]
     },
     {
       "id": "5e22afe10f4753c4aff4a0728c8b7b06",
@@ -1107,9 +1118,7 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-13T18:32:55.493934+09:00",
-      "matched_categories": [
-        "바이오"
-      ]
+      "matched_categories": []
     },
     {
       "id": "5edf449176be3570fbac7785f30d54dd",
@@ -1254,7 +1263,9 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-13T18:32:55.493112+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "바이오"
+      ]
     },
     {
       "id": "2cb4010f88b848657429d94758557774",
@@ -1322,7 +1333,9 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-13T18:32:55.492804+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "바이오"
+      ]
     },
     {
       "id": "3ae61e56db63cedacfa1bfb20462e561",
@@ -1426,7 +1439,9 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-13T18:32:55.492215+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "바이오"
+      ]
     },
     {
       "id": "7f97b4a1e7ae99db975e8c728bca4b7e",
@@ -1728,7 +1743,9 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-13T02:21:37.701736+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "바이오"
+      ]
     },
     {
       "id": "c853f249f72d6907074e5327f355fc53",
@@ -1785,7 +1802,9 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-13T02:21:37.701561+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "바이오"
+      ]
     },
     {
       "id": "dd1dc130af10dd5f9b7d61786c284821",
@@ -1807,7 +1826,9 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-13T02:21:37.701456+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "바이오"
+      ]
     },
     {
       "id": "f8a5b48d1340390060df3c18a4bbbb9b",
@@ -2014,7 +2035,9 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-13T02:21:37.700747+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "바이오"
+      ]
     },
     {
       "id": "b8b9ff2684e65a848f5b76ea558a20d3",
@@ -2280,7 +2303,9 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-12T15:00:08.946431+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "바이오"
+      ]
     },
     {
       "id": "1ba139f7e7920d1303fcb115ba888769",
@@ -2572,9 +2597,7 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-12T15:00:08.945794+09:00",
-      "matched_categories": [
-        "바이오"
-      ]
+      "matched_categories": []
     },
     {
       "id": "4d467dfa39a24477216271c09b59de00",
@@ -2596,7 +2619,9 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-12T15:00:08.945745+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "바이오"
+      ]
     },
     {
       "id": "dbda74c1fcbc270fdd7221624394f898",
@@ -3168,7 +3193,9 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-12T15:00:08.947592+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "바이오"
+      ]
     },
     {
       "id": "b3a020320263f62db188d0d3f382731c",
@@ -3207,7 +3234,9 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-12T15:00:08.947521+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "바이오"
+      ]
     },
     {
       "id": "cb02b7266614825f9ce7a6cca8258e75",
