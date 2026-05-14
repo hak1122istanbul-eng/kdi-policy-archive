@@ -1,6 +1,6 @@
 {
   "source": "https://eiec.kdi.re.kr/policy/rss.do?rss_type=material",
-  "last_updated": "2026-05-15T08:23:03.532208+09:00",
+  "last_updated": "2026-05-15T08:27:03.630422+09:00",
   "total_count": 289,
   "items": [
     {
@@ -208,9 +208,7 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-14T18:18:31.525291+09:00",
-      "matched_categories": [
-        "에너지"
-      ]
+      "matched_categories": []
     },
     {
       "id": "52f283fefb048b4a24fe43e60060168e",
@@ -291,9 +289,7 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-14T18:18:31.525052+09:00",
-      "matched_categories": [
-        "에너지"
-      ]
+      "matched_categories": []
     },
     {
       "id": "870fe482289e68f15dbb2e00437d5d71",
@@ -738,9 +734,7 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-13T18:32:55.492406+09:00",
-      "matched_categories": [
-        "에너지"
-      ]
+      "matched_categories": []
     },
     {
       "id": "e339a3022bb8636622a0c79879120d1d",
@@ -903,9 +897,7 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-13T18:32:55.494892+09:00",
-      "matched_categories": [
-        "에너지"
-      ]
+      "matched_categories": []
     },
     {
       "id": "b19c051f1c916daf5b28e2cbc1a721e2",
@@ -1365,9 +1357,7 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-13T18:32:55.492660+09:00",
-      "matched_categories": [
-        "에너지"
-      ]
+      "matched_categories": []
     },
     {
       "id": "bd1026de42fd4853c9449f6d52579ffc",
@@ -1749,9 +1739,7 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-13T02:21:37.701701+09:00",
-      "matched_categories": [
-        "에너지"
-      ]
+      "matched_categories": []
     },
     {
       "id": "f6daa0d7fb22fe05e86b227a5e0fced4",
@@ -2106,9 +2094,7 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-13T02:21:37.700448+09:00",
-      "matched_categories": [
-        "에너지"
-      ]
+      "matched_categories": []
     },
     {
       "id": "709f450c6f0f5d57a702a11860c18cc8",
@@ -2155,7 +2141,6 @@
       "original_category": "",
       "collected_at": "2026-05-13T02:21:37.700202+09:00",
       "matched_categories": [
-        "에너지",
         "AI"
       ]
     },
@@ -2434,10 +2419,7 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-12T15:00:08.946121+09:00",
-      "matched_categories": [
-        "수소",
-        "에너지"
-      ]
+      "matched_categories": []
     },
     {
       "id": "6e87f22a471e4e5aaa529c2bed412e72",
@@ -2448,9 +2430,7 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-12T15:00:08.946098+09:00",
-      "matched_categories": [
-        "에너지"
-      ]
+      "matched_categories": []
     },
     {
       "id": "a6a0628fc596ce223537dd91473ea263",
@@ -2842,9 +2822,7 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-12T15:00:08.945276+09:00",
-      "matched_categories": [
-        "에너지"
-      ]
+      "matched_categories": []
     },
     {
       "id": "658b074850289962480c4da112ac2fa0",

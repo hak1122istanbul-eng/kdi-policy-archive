@@ -21,6 +21,11 @@ def classify_item(item, categories_config):
     if not case_sensitive:
         text_to_search = text_to_search.lower()
         
+    # Prevent false positives from common names and idioms
+    text_to_search = text_to_search.replace("기후에너지환경부", "기후부")
+    text_to_search = text_to_search.replace("수소불화탄소", "불화탄소")
+    text_to_search = re.sub(r"전력을\s+(다해|다하|다할|기울)", "최선을 ", text_to_search)
+        
     for category in categories_config.get('categories', []):
         keywords = category.get('keywords', [])
         for keyword in keywords:
