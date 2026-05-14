@@ -1,6 +1,6 @@
 {
   "source": "https://eiec.kdi.re.kr/policy/rss.do?rss_type=material",
-  "last_updated": "2026-05-15T08:19:18.014378+09:00",
+  "last_updated": "2026-05-15T08:23:03.532208+09:00",
   "total_count": 289,
   "items": [
     {
@@ -509,9 +509,7 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-14T18:18:31.524293+09:00",
-      "matched_categories": [
-        "철강"
-      ]
+      "matched_categories": []
     },
     {
       "id": "200fd9d88d7f9bc8ef57720355984231",
@@ -674,9 +672,7 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-14T18:18:31.523564+09:00",
-      "matched_categories": [
-        "철강"
-      ]
+      "matched_categories": []
     },
     {
       "id": "a8c44426dfce790715ec1b627ae4b78c",
@@ -2077,9 +2073,7 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-13T02:21:37.700594+09:00",
-      "matched_categories": [
-        "철강"
-      ]
+      "matched_categories": []
     },
     {
       "id": "c7cbb9ae30001286ff7bb832c69e687d",
@@ -2633,9 +2627,7 @@
       "author": "",
       "original_category": "",
       "collected_at": "2026-05-12T15:00:08.945721+09:00",
-      "matched_categories": [
-        "철강"
-      ]
+      "matched_categories": []
     },
     {
       "id": "2dbc7c6262b658df23c1d9f5f051d8d9",
