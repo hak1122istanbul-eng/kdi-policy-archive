@@ -30,9 +30,10 @@ let categoryModal, modalCategoryList, manageCategoriesBtn, closeModalBtn, modalO
 async function init() {
     setupThemeToggle();
     try {
+        const ts = new Date().getTime();
         const [archiveRes, categoriesRes] = await Promise.all([
-            fetch('data/archive.json').then(r => r.json()).catch(() => ({ items: [] })),
-            fetch('data/categories.json').then(r => r.json()).catch(() => ({ categories: [] }))
+            fetch(`data/archive.json?v=${ts}`).then(r => r.json()).catch(() => ({ items: [] })),
+            fetch(`data/categories.json?v=${ts}`).then(r => r.json()).catch(() => ({ categories: [] }))
         ]);
         
         allItems = archiveRes.items || [];
