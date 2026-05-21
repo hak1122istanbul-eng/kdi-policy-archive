@@ -17,6 +17,19 @@ ARCHIVE_PATH = "docs/data/archive.json"
 CATEGORIES_PATH = "docs/data/categories.json"
 KST = timezone(timedelta(hours=9))
 
+def extract_author(description):
+    if not description:
+        return ""
+    snippet = description.strip()[:80]
+    match = re.search(r'^([가-힣a-zA-Z0-9\s·(),&·/]+?)(?:은|는)(?=\s|’|\'|\"|\d|\.|\()', snippet)
+    if match:
+        author = match.group(1).strip()
+        author = re.sub(r'\(이하\s+[가-힣]+\)', '', author).strip()
+        if author.endswith('와') or author.endswith('과'):
+            author = author[:-1].strip()
+        return author
+    return ""
+
 def fetch_rss(url, retries=3):
     for attempt in range(retries):
         try:
@@ -127,13 +140,17 @@ def parse_rss(xml_content, batch_time, web_dates):
         
         category = entry.category if 'category' in entry else ""
         
+        author = extract_author(description)
+        if not author:
+            author = entry.author if 'author' in entry else ""
+            
         item = {
             "id": item_id,
             "title": entry.title,
             "link": link,
             "description": description,
             "pub_date": pub_date,
-            "author": entry.author if 'author' in entry else "",
+            "author": author,
             "original_category": category,
             "collected_at": batch_time.isoformat()
         }
@@ -184,6 +201,14 @@ def main():
         
         current_pub_date = item.get('pub_date', '')
         
+        # Update author if missing or generic
+        current_author = item.get('author', '')
+        if not current_author or current_author == 'KDI':
+            extracted = extract_author(item.get('description', ''))
+            if extracted:
+                item['author'] = extracted
+                updated_existing += 1
+
         # Check manual overrides first
         if num in MANUAL_OVERRIDES and current_pub_date != MANUAL_OVERRIDES[num]:
             item['pub_date'] = MANUAL_OVERRIDES[num]
