@@ -1,6 +1,6 @@
 {
   "source": "https://eiec.kdi.re.kr/policy/rss.do?rss_type=material",
-  "last_updated": "2026-05-21T11:08:31.412225+09:00",
+  "last_updated": "2026-05-21T11:10:23.745284+09:00",
   "total_count": 561,
   "items": [
     {
@@ -84,7 +84,9 @@
       "author": "해양수산부",
       "original_category": "",
       "collected_at": "2026-05-20T19:36:44.569874+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "f206238187eae6ae2de5b6caa73804ce",
@@ -202,7 +204,8 @@
       "original_category": "",
       "collected_at": "2026-05-20T19:36:44.569874+09:00",
       "matched_categories": [
-        "창업"
+        "창업",
+        "해양"
       ]
     },
     {
@@ -277,7 +280,9 @@
       "author": "해양수산부와 기후에너지환경부",
       "original_category": "",
       "collected_at": "2026-05-20T19:36:44.569874+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "5f1683e3efef9e569a7af6ce43d5a7ba",
@@ -288,7 +293,9 @@
       "author": "고용노동부",
       "original_category": "",
       "collected_at": "2026-05-20T19:36:44.569874+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "cf0b1e85cf2ead5b61e1366b063d8c42",
@@ -426,7 +433,9 @@
       "author": "해양수산부",
       "original_category": "",
       "collected_at": "2026-05-20T19:36:44.569874+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "28ad43198066e0e1e6e6f3a596eae3bf",
@@ -619,7 +628,8 @@
       "original_category": "",
       "collected_at": "2026-05-20T19:36:44.569874+09:00",
       "matched_categories": [
-        "AI"
+        "AI",
+        "해양"
       ]
     },
     {
@@ -693,7 +703,8 @@
       "original_category": "",
       "collected_at": "2026-05-20T19:36:44.569874+09:00",
       "matched_categories": [
-        "창업"
+        "창업",
+        "해양"
       ]
     },
     {
@@ -767,7 +778,9 @@
       "author": "해양수산부",
       "original_category": "",
       "collected_at": "2026-05-19T20:43:45.375617+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "0eebaf662cfe16dda1725d8b44faa143",
@@ -817,7 +830,8 @@
       "original_category": "",
       "collected_at": "2026-05-19T20:43:45.375617+09:00",
       "matched_categories": [
-        "AI"
+        "AI",
+        "해양"
       ]
     },
     {
@@ -970,7 +984,9 @@
       "author": "산업통상부",
       "original_category": "",
       "collected_at": "2026-05-19T20:43:45.375617+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "1e3b8c604c10a4f44710d364d30ce4e6",
@@ -1314,7 +1330,9 @@
       "author": "해양수산부",
       "original_category": "",
       "collected_at": "2026-05-19T20:43:45.375617+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "0befa09e330af4ae488317074b389fce",
@@ -1325,7 +1343,9 @@
       "author": "해양수산부",
       "original_category": "",
       "collected_at": "2026-05-19T20:43:45.375617+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "aba10d3f0f0744e939c933e09248ee5d",
@@ -1405,7 +1425,8 @@
       "original_category": "",
       "collected_at": "2026-05-19T20:43:45.375617+09:00",
       "matched_categories": [
-        "에너지"
+        "에너지",
+        "해양"
       ]
     },
     {
@@ -2204,7 +2225,9 @@
       "author": "해양수산부",
       "original_category": "",
       "collected_at": "2026-05-18T21:57:44.709655+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "d463caf5920d3de7bcb0b0448587bceb",
@@ -2215,7 +2238,9 @@
       "author": "해양수산부",
       "original_category": "",
       "collected_at": "2026-05-18T21:57:44.709655+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "69924d24b7236659fd3eb0217f3acc31",
@@ -2309,7 +2334,8 @@
       "original_category": "",
       "collected_at": "2026-05-18T21:57:44.709655+09:00",
       "matched_categories": [
-        "AI"
+        "AI",
+        "해양"
       ]
     },
     {
@@ -2332,7 +2358,9 @@
       "author": "해양수산부",
       "original_category": "",
       "collected_at": "2026-05-18T21:57:44.709655+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "50c84aa381a159e02ed3dfde7afc5ad3",
@@ -2343,7 +2371,9 @@
       "author": "해양수산부",
       "original_category": "",
       "collected_at": "2026-05-18T21:57:44.709655+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "8e57f95e7e846bf9ae3f58a2c7d26dbc",
@@ -2381,7 +2411,9 @@
       "author": "농림축산식품부와 해양수산부",
       "original_category": "",
       "collected_at": "2026-05-18T21:57:44.709655+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "34b66f21071baa787114174cf862a193",
@@ -2416,7 +2448,9 @@
       "author": "해양수산부와 농림축산식품부",
       "original_category": "",
       "collected_at": "2026-05-18T21:57:44.709655+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "ef0ce77c4096e84d3e0fe2c96c341226",
@@ -2427,7 +2461,9 @@
       "author": "해양수산부",
       "original_category": "",
       "collected_at": "2026-05-18T21:57:44.709655+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "a1f7030510cac1e36410a1b375d658b0",
@@ -2947,7 +2983,8 @@
       "original_category": "",
       "collected_at": "2026-05-18T09:58:48.979254+09:00",
       "matched_categories": [
-        "에너지"
+        "에너지",
+        "해양"
       ]
     },
     {
@@ -3627,7 +3664,9 @@
       "author": "재정경제부",
       "original_category": "",
       "collected_at": "2026-05-14T18:18:31.524675+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "4cc5b902699b4e8f05e185ff43336c5b",
@@ -3965,7 +4004,8 @@
       "original_category": "",
       "collected_at": "2026-05-13T18:32:55.491560+09:00",
       "matched_categories": [
-        "창업"
+        "창업",
+        "해양"
       ]
     },
     {
@@ -4093,7 +4133,9 @@
       "author": "농림축산식품부",
       "original_category": "",
       "collected_at": "2026-05-13T18:32:55.494997+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "335a2346f56d18afdab8d3c8916b9264",
@@ -4140,7 +4182,9 @@
       "author": "국가데이터처",
       "original_category": "",
       "collected_at": "2026-05-13T18:32:55.494789+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "c64b232ba9ade953744cf417d9695724",
@@ -4176,7 +4220,9 @@
       "author": "조달청",
       "original_category": "",
       "collected_at": "2026-05-13T18:32:55.494625+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "3f682c8a3edaaa620ad9b2bd735e36f8",
@@ -4262,7 +4308,9 @@
       "author": "농림축산식품부",
       "original_category": "",
       "collected_at": "2026-05-13T18:32:55.494264+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "62276041b20f68ec97785381aae8aef3",
@@ -4273,7 +4321,9 @@
       "author": "재정경제부",
       "original_category": "",
       "collected_at": "2026-05-13T18:32:55.494191+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "13571e41fa3bf89218feb1fdda4e506b",
@@ -4391,7 +4441,9 @@
       "author": "보건복지부",
       "original_category": "",
       "collected_at": "2026-05-13T18:32:55.493686+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "1a3359a0e780258b21cd944756176bb3",
@@ -4962,7 +5014,8 @@
       "original_category": "",
       "collected_at": "2026-05-13T02:21:37.701736+09:00",
       "matched_categories": [
-        "바이오"
+        "바이오",
+        "해양"
       ]
     },
     {
@@ -5308,7 +5361,8 @@
       "original_category": "",
       "collected_at": "2026-05-13T02:21:37.700594+09:00",
       "matched_categories": [
-        "창업"
+        "창업",
+        "해양"
       ]
     },
     {
@@ -5449,7 +5503,9 @@
       "author": "국무조정실",
       "original_category": "",
       "collected_at": "2026-05-12T15:00:08.945052+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "989917ee7f6ce111421eb89f527961db",
@@ -5495,7 +5551,9 @@
       "author": "교육부와 해양수산부",
       "original_category": "",
       "collected_at": "2026-05-12T15:00:08.946507+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "030d90a18607827fb5dd308122ef4c14",
@@ -5605,7 +5663,9 @@
       "author": "관세청",
       "original_category": "",
       "collected_at": "2026-05-12T15:00:08.946276+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "5b6ed1c5c7e5dbe212b3b374243f2610",
@@ -5722,7 +5782,8 @@
       "original_category": "",
       "collected_at": "2026-05-12T15:00:08.946026+09:00",
       "matched_categories": [
-        "창업"
+        "창업",
+        "해양"
       ]
     },
     {
@@ -5817,7 +5878,8 @@
       "collected_at": "2026-05-12T15:00:08.945816+09:00",
       "matched_categories": [
         "AI",
-        "창업"
+        "창업",
+        "해양"
       ]
     },
     {
@@ -6216,7 +6278,9 @@
       "author": "농림축산식품부",
       "original_category": "",
       "collected_at": "2026-05-12T15:00:08.946897+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "1d7bbcfc31a5fd1f6ed53d8f60b5e3f8",
@@ -6251,7 +6315,8 @@
       "collected_at": "2026-05-12T15:00:08.946827+09:00",
       "matched_categories": [
         "AI",
-        "창업"
+        "창업",
+        "해양"
       ]
     },
     {
@@ -6264,7 +6329,8 @@
       "original_category": "",
       "collected_at": "2026-05-12T15:00:08.946785+09:00",
       "matched_categories": [
-        "창업"
+        "창업",
+        "해양"
       ]
     },
     {
@@ -6333,7 +6399,9 @@
       "author": "농림축산식품부",
       "original_category": "",
       "collected_at": "2026-05-12T15:00:08.946641+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "25c392cf47e477c6537674e28f670024",
@@ -6366,7 +6434,9 @@
       "author": "농림축산식품부",
       "original_category": "",
       "collected_at": "2026-05-12T15:00:08.946574+09:00",
-      "matched_categories": []
+      "matched_categories": [
+        "해양"
+      ]
     },
     {
       "id": "9999da9e6e0a533b128a45308d54dd1d",
