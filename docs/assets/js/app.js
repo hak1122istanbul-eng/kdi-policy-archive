@@ -6,6 +6,7 @@ const itemsPerPage = 30;
 
 let activeFilters = new Set();
 let searchQuery = '';
+let authorFilter = 'all';
 let dateFilter = 'all';
 let sortOrder = 'desc';
 
@@ -14,6 +15,7 @@ const itemsContainer = document.getElementById('items-container');
 const categoryFiltersContainer = document.getElementById('category-filters');
 const resultCountEl = document.getElementById('result-count');
 const searchInput = document.getElementById('search-input');
+const authorFilterSelect = document.getElementById('author-filter');
 const dateFilterSelect = document.getElementById('date-filter');
 const sortFilterSelect = document.getElementById('sort-filter');
 const paginationContainer = document.getElementById('pagination');
@@ -25,6 +27,33 @@ let timelineChartInstance = null;
 
 // Modal Elements
 let categoryModal, modalCategoryList, manageCategoriesBtn, closeModalBtn, modalOverlay, addCategoryBtn, downloadCategoriesBtn, copyCategoriesBtn;
+
+function populateAuthorFilter() {
+    if (!authorFilterSelect) return;
+    const authors = new Set();
+    allItems.forEach(item => {
+        const rawAuthor = item.author;
+        if (rawAuthor) {
+            const parts = rawAuthor.split(/(?:와|과|및|·|,|\s+소속\s+)/)
+                .map(s => s.trim())
+                .filter(s => s.length > 1);
+            parts.forEach(p => {
+                let clean = p.replace(/(?:은|는|등)$/, '').trim();
+                if (clean) authors.add(clean);
+            });
+        }
+    });
+    
+    const sortedAuthors = Array.from(authors).sort((a, b) => a.localeCompare(b, 'ko'));
+    
+    authorFilterSelect.innerHTML = '<option value="all">전체</option>';
+    sortedAuthors.forEach(author => {
+        const opt = document.createElement('option');
+        opt.value = author;
+        opt.textContent = author;
+        authorFilterSelect.appendChild(opt);
+    });
+}
 
 // Initialization
 async function init() {
@@ -45,6 +74,7 @@ async function init() {
             document.getElementById('last-updated').textContent = `업데이트: ${d.toLocaleString()}`;
         }
 
+        populateAuthorFilter();
         renderCategoryFilters();
         setupEventListeners();
         applyFilters();
@@ -156,6 +186,11 @@ function setupEventListeners() {
             searchQuery = e.target.value.toLowerCase();
             applyFilters();
         }, 300);
+    });
+
+    authorFilterSelect.addEventListener('change', (e) => {
+        authorFilter = e.target.value;
+        applyFilters();
     });
 
     dateFilterSelect.addEventListener('change', (e) => {
@@ -315,6 +350,11 @@ function applyFilters() {
             (item.title && item.title.toLowerCase().includes(searchQuery)) ||
             (item.description && item.description.toLowerCase().includes(searchQuery))
         );
+    }
+
+    // Author (Source) filter
+    if (authorFilter !== 'all') {
+        result = result.filter(item => item.author && item.author.includes(authorFilter));
     }
 
     // Date filter
